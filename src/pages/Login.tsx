@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import * as yup from "yup";
 import { useFormik } from "formik";
-import axios from "@/lib/axios"
+import axios from "@/lib/axios";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { toast } from "react-toastify";
@@ -40,7 +40,6 @@ export default function Login() {
             title: "Oops...",
             text: error.response.data.message,
           });
-          console.error(error.response.data.message);
         });
     },
   });
